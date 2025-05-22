@@ -1,0 +1,125 @@
+{
+	"mcp_servers": {
+		"fetch": {
+			"disabled": true,
+			"command": "node",
+			"args": [
+				"/Users/dshills/Development/external/fetch-mcp/dist/index.js"
+			]
+		},
+		"perplexity-ask": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"server-perplexity-ask"
+			]
+		},
+		"go-mcp": {
+			"command": "go-mcp",
+			"args": []
+		},
+		"github-mcp-server": {
+			"disabled": true,
+			"command": "github-mcp-server",
+			"args": [
+				"stdio"
+			]
+		},
+		"context7": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"@upstash/context7-mcp@latest"
+			]
+		},
+		"sequential-thinking": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
+			]
+		},
+		"filesystem": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-filesystem",
+				"/Users/dshills/Development/projects/craftMCP/"
+			]
+		},
+		"memory": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-memory"
+			]
+		},
+		"brave-search": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-brave-search"
+			]
+		},
+		"json": {
+			"disabled": true,
+			"command": "npx",
+			"args": [
+				"@gongrzhe/server-json-mcp@1.0.3"
+			]
+		},
+		"go-filesystem": {
+			"disabled": true,
+			"command": "mcp-filesystem-server",
+			"args": [
+				"/Users/dshills/Development/projects/craftMCP"
+			]
+		},
+		"git": {
+			"disabled": true,
+			"comment": "Works from CLI not from here",
+			"command": "git-mcp-go",
+			"args": [
+				"serve",
+				"--mode",
+				"shell",
+				"--repository",
+				"/Users/dshills/Development/projects/craftMCP"
+			]
+		},
+		"excel-stdio": {
+			"disabled": true,
+			"comment": "Not working",
+			"command": "uv",
+			"args": [
+				"run",
+				"excel-mcp-server",
+				"stdio"
+			]
+		},
+		"mcp-server-docker": {
+			"disabled": true,
+			"comment": "Not working",
+			"command": "uvx",
+			"args": [
+				"mcp-server-docker"
+			]
+		},
+		"taskmaster-ai": {
+			"disabled": true,
+			"comment": "not working",
+			"command": "npx",
+			"args": [
+				"-y",
+				"--package=task-master-ai",
+				"task-master-ai"
+			]
+		}
+	}
+}

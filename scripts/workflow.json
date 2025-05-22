@@ -1,0 +1,29 @@
+{
+	"mcp_servers": {
+		"go-mcp": {
+			"command": "go-mcp",
+			"args": []
+		},
+		"taskmaster-ai": {
+			"disabled": true,
+			"comment": "not working",
+			"command": "npx",
+			"args": [
+				"-y",
+				"--package=task-master-ai",
+				"task-master-ai"
+			]
+		}
+	},
+	"steps": [
+		{
+			"step_type": "llm",
+			"llm_step": {
+				"provider": "openai",
+				"model": "o4-mini",
+				"max_tokens": -1,
+				"prompt": "What is the temperature in Paris"
+			}
+		}
+	]
+}
